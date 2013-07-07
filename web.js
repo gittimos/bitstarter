@@ -7,7 +7,7 @@ app.get('/', function(request, response) {
   fs.readFile('index.html',function(data){
     var buf = new Buffer(data);
     response.send(buf.toString());
-  })
+  });
   // response.send('Hello World 2!');
 });
 
